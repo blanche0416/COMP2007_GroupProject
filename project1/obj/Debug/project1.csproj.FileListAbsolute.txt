@@ -1,0 +1,6 @@
+C:\Users\GCSTUDENT\Desktop\project1\project1\bin\project1.dll.config
+C:\Users\GCSTUDENT\Desktop\project1\project1\bin\project1.dll
+C:\Users\GCSTUDENT\Desktop\project1\project1\bin\project1.pdb
+C:\Users\GCSTUDENT\Desktop\project1\project1\obj\Debug\project1.csprojResolveAssemblyReference.cache
+C:\Users\GCSTUDENT\Desktop\project1\project1\obj\Debug\project1.dll
+C:\Users\GCSTUDENT\Desktop\project1\project1\obj\Debug\project1.pdb
