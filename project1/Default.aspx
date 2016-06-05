@@ -1,6 +1,12 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="project1.Default" %>
+﻿<%--  File name: Default.aspx --%>
+<%--  Author's name: Pui In Kwok and Mo Zou --%>
+<%--  Web site name: Game Tracker --%>
+<%--  File description: This page the home page. --%>
+
+<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="project1.Default" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <!-- Here is the header and contact for the page. -->
      <div class="container">
         <div class="jumbotron">
             <h1>Hello, there!</h1>

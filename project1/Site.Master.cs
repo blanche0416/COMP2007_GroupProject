@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* File name: Site.Master.cs
+ * Author's name: Pui In Kwok and Mo Zou
+ * Web site name: Game Tracker
+ * File description: This is the site master.cs for all the pages
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

@@ -1,6 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="project1.Login" %>
+﻿<%--  File name: Login.aspx --%>
+<%--  Author's name: Pui In Kwok and Mo Zou --%>
+<%--  Web site name: Game Tracker --%>
+<%--  File description: This page the login page, allow user to
+                        enter their user name and password to login. --%>
+
+<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="project1.Login" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <!-- Here is the header and contact for the page. -->
     <h1 class="titleH1">Login Page</h1>
     <div class="container">
          <div class="row">

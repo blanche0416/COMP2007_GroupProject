@@ -1,6 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="project1.Register" %>
+﻿<%--  File name: Register.aspx --%>
+<%--  Author's name: Pui In Kwok and Mo Zou --%>
+<%--  Web site name: Game Tracker --%>
+<%--  File description: This page the register page, allow user to register
+                        an account. --%>
+
+<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="project1.Register" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">  
+    <!-- Here is the header and contact for the page. -->
     <h1 class="titleH1">Register Page</h1>
     <div class="container">
          <div class="row">

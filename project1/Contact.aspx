@@ -1,12 +1,21 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="project1.Contact" %>
+﻿<%--  File name: Contact.aspx --%>
+<%--  Author's name: Pui In Kwok and Mo Zou --%>
+<%--  Web site name: Game Tracker --%>
+<%--  File description: This page the contact page with contact info 
+                       and allow user to enter their
+                       info and message and submit it. --%>
+
+<%@ Page Title="Contact" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="project1.Contact" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <!-- Here is the header and contact for the page. -->
       <h1 class="titleH1">Contact Us</h1>
    <div class="container">
        
         <div class="row">
             <div class="col-md-4">
                 <br />
+                <!-- Here is the contact info -->
                 <div class="panel panel-primary">
                     <div class="panel-heading">
                         <h3 class="panel-title">Contact Info</h3>
@@ -22,6 +31,7 @@
                 </div>
 
             </div>
+            <!-- Here is the from for user to enter their info and message -->
             <div class="col-md-6">
                 <br />
                 <div class="form-group">
