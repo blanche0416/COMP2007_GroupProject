@@ -22,14 +22,13 @@
                     <label class="control-label" for="Password">Password</label>
                     <asp:TextBox runat="server" CssClass="form-control" ID="PasswordTextBox" placeholder="Password" required="true"></asp:TextBox>
                 </div>
-             
+                <p>Need a new account? <a href="Register.aspx">Register</a> here</p>
                 <div class="text-right">
-                    <asp:Button CssClass="btn btn-primary btn-lg" ID="SendButton" Text="Send" runat="server" OnClick="SendButton_Click" />
+                    <asp:Button CssClass="btn btn-primary btn-lg" ID="LoginButton" Text="Login" runat="server" OnClick="LoginButton_Click" />
                     <a class="btn btn-default btn-lg" id="CancelButton" href="Default.aspx">Cancel</a>
                 </div>             
                 <br />
             </div>
         </div>
-    <p>Need a new account? <a href="Register.aspx">Register</a> here</p>
     </div>
 </asp:Content>

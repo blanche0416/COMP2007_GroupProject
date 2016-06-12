@@ -26,23 +26,15 @@
                     <label class="control-label" for="Email">Email</label>
                     <asp:TextBox runat="server" TextMode="Email" CssClass="form-control" ID="EmailTextBox" placeholder="Email" required="true"></asp:TextBox>
                 </div>
-                <div class="form-group">
-                    <label class="control-label" for="ContactNumber">Contact Number</label>
-                    <asp:TextBox runat="server" TextMode="Phone" CssClass="form-control" ID="ContactNumberTextBox" placeholder="Contact Number" required="true"></asp:TextBox>
-                </div>
-                <div class="form-group">
-                    <label class="control-label" for="Introduction">Introduction</label>
-                    <asp:TextBox runat="server" TextMode="MultiLine" Columns="5" Rows="5" CssClass="form-control" ID="IntroductionTextBox" placeholder="brief introduction about youself" required="true"></asp:TextBox>
-                </div>
+                <p>Already have an account? <a href="Login.aspx">Login</a> here</p>
                 <div class="text-right">
-                    <asp:Button CssClass="btn btn-primary btn-lg" ID="SendButton" Text="Send" runat="server" OnClick="SendButton_Click" />
-                    <a class="btn btn-default btn-lg" id="CancelButton" href="Default.aspx">Cancel</a>
+                    <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
+                    <asp:Button Text="Submit" ID="SubmitButton" CssClass="btn btn-primary btn-lg" runat="server" OnClick="SubmitButton_Click" />
                 </div>
                 <br />
                 
             </div>
         </div>
-        <a href="Login.aspx">Already have an account? Login here</a>
     </div>
 
 </asp:Content>

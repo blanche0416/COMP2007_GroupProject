@@ -14,7 +14,7 @@ namespace project1
 
         }
 
-        protected void SendButton_Click(object sender, EventArgs e)
+        protected void LoginButton_Click(object sender, EventArgs e)
         {
             //go to default page if login successfully
 

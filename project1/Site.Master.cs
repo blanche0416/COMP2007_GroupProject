@@ -35,8 +35,8 @@ namespace project1
                 case "Home Page":
                     home.Attributes.Add("class", "active");
                     break;              
-                case "About":
-                    about.Attributes.Add("class", "active");
+                case "GameTracker":
+                    gametracker.Attributes.Add("class", "active");
                     break;
                 case "Contact":
                     contact.Attributes.Add("class", "active");

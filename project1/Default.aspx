@@ -15,5 +15,4 @@
             <p><a class="btn btn-info btn-lg" href="Contact.aspx" role="button">Give suggestion</a></p>
         </div>
     </div>
-
 </asp:Content>

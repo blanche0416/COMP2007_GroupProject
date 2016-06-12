@@ -13,26 +13,13 @@ namespace project1
         {
 
         }
-
-        protected void SendButton_Click(object sender, EventArgs e)
-        {
-            //go to default page if register successfully
-
-            Response.Redirect("Default.aspx");
-
-
-        }
-        
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            //cancel button is clicked, everything go empty
-            UsernameTextBox.Text = "";
-            PasswordTextBox.Text = "";
-            EmailTextBox.Text = "";
-            ContactNumberTextBox.Text = "";
-            IntroductionTextBox.Text = "";
+            Response.Redirect("~/Login.aspx");
         }
-
-
+        protected void SubmitButton_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
