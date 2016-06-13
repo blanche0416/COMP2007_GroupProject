@@ -47,7 +47,7 @@
                         <asp:BoundField DataField="ShortDescription" HeaderText="Short Description" Visible="true" />
                         <asp:BoundField DataField="TotalPointsScored" HeaderText="Total Points Scored" Visible="true" />
                         <asp:HyperLinkField HeaderText="Details" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Details"
-                            NavigateUrl="~/TeamDetails.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" DataNavigateUrlFields="TeamID" DataNavigateUrlFormatString="TeamDetails.aspx?TeamID={0}" />
+                            NavigateUrl="~/GameDetails.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" DataNavigateUrlFields="GameID" DataNavigateUrlFormatString="GameDetails.aspx?GameID={0}" />
                     </Columns>
                 </asp:GridView>
             </div>
