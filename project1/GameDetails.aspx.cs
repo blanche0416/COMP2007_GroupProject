@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* File name: GameDetails.aspx.cs
+ * Author's name: Pui In Kwok and Mo Zou
+ * Web site name: Game Tracker
+ * File description: Here will get the team data from database and bind it with 
+                     gridview, then show the data in the page, and allow login user
+                     to edit game info.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -17,6 +25,7 @@ namespace project1
             if ((!IsPostBack) && (Request.QueryString.Count > 0))
             {
                 this.GetGame();
+                this.GetTeams();
             }
         }
         protected void GetGame()
@@ -41,6 +50,21 @@ namespace project1
                     SpectatorsTextBox.Text = updatedGame.NumberOfSpectators.ToString();
                     DesignatedWinningTeamTextBox.Text = updatedGame.DesignatedWinningTeam;
                 }
+            }
+        }
+        protected void GetTeams()
+        {
+            //populate teh form with existing data from the database
+            int GameID = Convert.ToInt32(Request.QueryString["GameID"]);
+
+            using (DefaultConnection db = new DefaultConnection())
+            {
+                var Teams = (from team in db.Teams
+                             where team.GameID == GameID
+                             select team);
+
+                TeamsGridView.DataSource = Teams.ToList();
+                TeamsGridView.DataBind();
             }
         }
         protected void CancelButton_Click(object sender, EventArgs e)

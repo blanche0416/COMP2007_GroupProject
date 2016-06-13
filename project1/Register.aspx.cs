@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* File name: Register.aspx.cs
+ * Author's name: Pui In Kwok and Mo Zou
+ * Web site name: Game Tracker
+ * File description: This page will get the data in the textbox and
+                     all it to db if user is not exist
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,6 +20,7 @@ namespace project1
         {
 
         }
+        //cancel button is clicked, everything go empty
         protected void CancelButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Login.aspx");

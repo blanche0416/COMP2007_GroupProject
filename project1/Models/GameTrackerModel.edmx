@@ -78,7 +78,7 @@
             <PropertyRef Name="TeamID" />
           </Key>
           <Property Name="TeamID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="GameName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="TeamName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ShortDescription" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="TotalPointsScored" Type="Int32" Nullable="false" />
           <Property Name="GameID" Type="Int32" Nullable="false" />
@@ -136,7 +136,7 @@
             <EntityTypeMapping TypeName="GameTrackerModel.Team">
               <MappingFragment StoreEntitySet="Teams">
                 <ScalarProperty Name="TeamID" ColumnName="TeamID" />
-                <ScalarProperty Name="GameName" ColumnName="GameName" />
+                <ScalarProperty Name="TeamName" ColumnName="GameName" />
                 <ScalarProperty Name="ShortDescription" ColumnName="ShortDescription" />
                 <ScalarProperty Name="TotalPointsScored" ColumnName="TotalPointsScored" />
                 <ScalarProperty Name="GameID" ColumnName="GameID" />

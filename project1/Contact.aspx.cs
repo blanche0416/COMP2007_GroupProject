@@ -16,20 +16,12 @@ namespace project1
 
         protected void SendButton_Click(object sender, EventArgs e)
         {
-            //try to send email when send button is clicked
-            
-                Response.Redirect("Default.aspx");
-         
-
+            Response.Redirect("Default.aspx");
         }
         //cancel button is clicked, everything go empty
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            FirstNameTextBox.Text = "";
-            LastNameTextBox.Text = "";
-            EmailTextBox.Text = "";
-            ContactNumberTextBox.Text = "";
-            MessageTextBox.Text = "";
+            Response.Redirect("~/Default.aspx");
         }
     }
 }

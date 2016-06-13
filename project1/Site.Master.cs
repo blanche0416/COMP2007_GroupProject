@@ -1,4 +1,4 @@
-﻿/* File name: Site.Master.cs
+﻿/* File name: Site.Master.aspx.cs
  * Author's name: Pui In Kwok and Mo Zou
  * Web site name: Game Tracker
  * File description: This is the site master.cs for all the pages
@@ -34,7 +34,7 @@ namespace project1
             {
                 case "Home Page":
                     home.Attributes.Add("class", "active");
-                    break;              
+                    break;
                 case "GameTracker":
                     gametracker.Attributes.Add("class", "active");
                     break;

@@ -15,7 +15,7 @@ namespace project1.Models
     public partial class Team
     {
         public int TeamID { get; set; }
-        public string GameName { get; set; }
+        public string TeamName { get; set; }
         public string ShortDescription { get; set; }
         public int TotalPointsScored { get; set; }
         public int GameID { get; set; }

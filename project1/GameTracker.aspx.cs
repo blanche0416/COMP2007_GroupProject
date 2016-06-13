@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* File name: GameTracker.aspx.cs
+ * Author's name: Pui In Kwok and Mo Zou
+ * Web site name: Game Tracker
+ * File description: Here will get the game data from database and bind it with 
+                     gridview, then show the data in the page.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;

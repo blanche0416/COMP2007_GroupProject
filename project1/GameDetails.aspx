@@ -1,10 +1,16 @@
-﻿<%@ Page Title="GameDetails" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GameDetails.aspx.cs" Inherits="project1.GameDetails" %>
+﻿<%--  File name: GameDetails.aspx --%>
+<%--  Author's name: Pui In Kwok and Mo Zou --%>
+<%--  Web site name: Game Tracker --%>
+<%--  File description: This is the main game tracker that show four games information,
+                        allow user to click detail to detail page --%>
+
+<%@ Page Title="GameDetails" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GameDetails.aspx.cs" Inherits="project1.GameDetails" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container">
         <div class="row">
-            <div class="col-md-offset-3 col-md-6">
-                <h1>Game Details</h1>
+            <div class="col-md-offset-2 col-md-8">
+                <h1 class="titleH1">Game Details</h1>
                 <h5>All Fields are Required</h5>
                 <br />
                 <div class="form-group">
@@ -31,6 +37,19 @@
                     <asp:Button Text="Cancel" ID="CancelButton" CssClass="btn btn-warning btn-lg" runat="server" UseSubmitBehavior="false" CausesValidation="false" OnClick="CancelButton_Click" />
                     <asp:Button Text="Save" ID="SaveButton" CssClass="btn btn-primary btn-lg" runat="server" OnClick="SaveButton_Click" />
                 </div>
+                <br />
+                <h1 class="titleH1">Teams</h1>
+                <asp:GridView runat="server" ID="TeamsGridView" CssClass="table table-striped table-border table-hover"
+                    AutoGenerateColumns="false">
+                    <Columns>
+                        <asp:BoundField DataField="TeamID" HeaderText="Game ID" Visible="true" />
+                        <asp:BoundField DataField="TeamName" HeaderText="Game Name" Visible="true" />
+                        <asp:BoundField DataField="ShortDescription" HeaderText="Short Description" Visible="true" />
+                        <asp:BoundField DataField="TotalPointsScored" HeaderText="Total Points Scored" Visible="true" />
+                        <asp:HyperLinkField HeaderText="Details" Text="<i class='fa fa-pencil-square-o fa-lg'></i> Details"
+                            NavigateUrl="~/GameDetails.aspx.cs" ControlStyle-CssClass="btn btn-primary btn-sm" runat="server" DataNavigateUrlFields="GameID" DataNavigateUrlFormatString="GameDetails.aspx?GameID={0}" />
+                    </Columns>
+                </asp:GridView>
             </div>
         </div>
     </div>

@@ -1,7 +1,8 @@
-﻿<%--  File name: GameTracker.aspx --%>
+﻿<%--  File name: GameDetails.aspx --%>
 <%--  Author's name: Pui In Kwok and Mo Zou --%>
 <%--  Web site name: Game Tracker --%>
-<%--  File description: This page the about page --%>
+<%--  File description: This is the main game tracker that show four games information,
+    allow user to click detail to detail page --%>
 
 <%@ Page Title="GameTracker" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GameTracker.aspx.cs" Inherits="project1.GameTracker" %>
 
@@ -9,8 +10,8 @@
     <!-- Here is the header and contact for the page. -->
      <div class="container">
         <div class="row">
-            <div class="col-md-offset-2 col-md-8">
-                <h1>Game Tracker</h1>
+            <div class="col-md-offset-1 col-md-10">
+                <h1 class="titleH1">Game Tracker</h1>
                 <asp:GridView runat="server" ID="GameTrackersGridView" CssClass="table table-striped table-border table-hover" 
                     AutoGenerateColumns="false">
                     <Columns>

@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* File name: Login.aspx.cs
+ * Author's name: Pui In Kwok and Mo Zou
+ * Web site name: Game Tracker
+ * File description: This page will check if the username and password
+                     user enter is correct, if yes direct to default page.
+*/
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,23 +20,17 @@ namespace project1
         {
 
         }
-
         protected void LoginButton_Click(object sender, EventArgs e)
         {
             //go to default page if login successfully
 
-            Response.Redirect("Default.aspx");
-
+            Response.Redirect("~/Default.aspx");
 
         }
-
+        //cancel button is clicked, everything go empty
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            //cancel button is clicked, everything go empty
-            UsernameTextBox.Text = "";
-            PasswordTextBox.Text = "";
-          
+            Response.Redirect("~/Default.aspx");
         }
-
     }
 }
