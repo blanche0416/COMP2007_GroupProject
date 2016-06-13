@@ -42,7 +42,7 @@
                 <asp:GridView runat="server" ID="TeamsGridView" CssClass="table table-striped table-border table-hover"
                     AutoGenerateColumns="false">
                     <Columns>
-                        <asp:BoundField DataField="TeamID" HeaderText="Game ID" Visible="true" />
+                        <asp:BoundField DataField="TeamID" HeaderText="Team ID" Visible="true" />
                         <asp:BoundField DataField="TeamName" HeaderText="Game Name" Visible="true" />
                         <asp:BoundField DataField="ShortDescription" HeaderText="Short Description" Visible="true" />
                         <asp:BoundField DataField="TotalPointsScored" HeaderText="Total Points Scored" Visible="true" />
