@@ -25,7 +25,7 @@ namespace project1
             if ((!IsPostBack) && (Request.QueryString.Count > 0))
             {
                 this.GetGame();
-                this.GetTeams();
+                this.GetTeam();
             }
         }
         protected void GetGame()
@@ -38,8 +38,8 @@ namespace project1
             {
                 //populate a student object instance with the StudentID from the URL Parameter
                 Game updatedGame = (from game in db.Games
-                                          where game.GameID == GameID
-                                       select game).FirstOrDefault();
+                                    where game.GameID == GameID
+                                    select game).FirstOrDefault();
 
                 //map the student properties to the form controls
                 if (updatedGame != null)
@@ -52,7 +52,7 @@ namespace project1
                 }
             }
         }
-        protected void GetTeams()
+        protected void GetTeam()
         {
             //populate teh form with existing data from the database
             int GameID = Convert.ToInt32(Request.QueryString["GameID"]);
