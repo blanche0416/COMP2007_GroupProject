@@ -69,7 +69,7 @@ namespace project1
         }
         protected void CancelButton_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/GameTracker.aspx");
+            Response.Redirect("~/Details/GameTracker.aspx");
         }
         protected void SaveButton_Click(object sender, EventArgs e)
         {
@@ -97,7 +97,7 @@ namespace project1
                 //run an insert command
                 db.SaveChanges();
                 //redirect back to the students page
-                Response.Redirect("~/GameTracker.aspx");
+                Response.Redirect("~/Details/GameTracker.aspx");
             }
         }
     }

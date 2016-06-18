@@ -34,16 +34,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="Default.aspx">Game Tracker</a>
+                <a class="navbar-brand" href="/Default.aspx">Game Tracker</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div id="bs-example-navbar-collapse-1" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li id="home" runat="server"><a href="Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li id="gametracker" runat="server"><a href="GameTracker.aspx"><i class="fa fa-gamepad fa-lg"></i> Game Tracker</a></li>
-                    <li id="contact" runat="server"><a href="Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
-                    <li id="register" runat="server"><a href="Register.aspx"><i class="fa fa-registered fa-lg"></i> Register</a></li>
-                    <li id="login" runat="server"><a href="Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+                    <li id="home" runat="server"><a href="/Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li id="register" runat="server"><a href="/Admin/Register.aspx"><i class="fa fa-registered fa-lg"></i> Register</a></li>
+                    <li id="login" runat="server"><a href="/Admin/Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+                    <li id="contact" runat="server"><a href="/Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
+                    <li id="gametracker" runat="server"><a href="/Details/GameTracker.aspx"><i class="fa fa-gamepad fa-lg"></i> Game Tracker</a></li>
+                    <li id="Logout" runat="server"><a href="/Details/Logout.aspx"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->

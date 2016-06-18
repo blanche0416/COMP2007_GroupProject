@@ -18,3 +18,17 @@ C:\Users\GCSTUDENT\Desktop\COMP2007_GroupProject\project1\bin\zh-Hant\EntityFram
 C:\Users\GCSTUDENT\Desktop\COMP2007_GroupProject\project1\obj\Debug\project1.csprojResolveAssemblyReference.cache
 C:\Users\GCSTUDENT\Desktop\COMP2007_GroupProject\project1\obj\Debug\project1.dll
 C:\Users\GCSTUDENT\Desktop\COMP2007_GroupProject\project1\obj\Debug\project1.pdb
+F:\Georgian\net\COMP2007_GroupProject\project1\bin\project1.dll.config
+F:\Georgian\net\COMP2007_GroupProject\project1\bin\project1.dll
+F:\Georgian\net\COMP2007_GroupProject\project1\bin\project1.pdb
+F:\Georgian\net\COMP2007_GroupProject\project1\bin\AspNet.ScriptManager.jQuery.dll
+F:\Georgian\net\COMP2007_GroupProject\project1\bin\EntityFramework.dll
+F:\Georgian\net\COMP2007_GroupProject\project1\bin\EntityFramework.SqlServer.dll
+F:\Georgian\net\COMP2007_GroupProject\project1\bin\System.Linq.Dynamic.dll
+F:\Georgian\net\COMP2007_GroupProject\project1\bin\EntityFramework.xml
+F:\Georgian\net\COMP2007_GroupProject\project1\bin\EntityFramework.SqlServer.xml
+F:\Georgian\net\COMP2007_GroupProject\project1\bin\zh-Hant\EntityFramework.resources.dll
+F:\Georgian\net\COMP2007_GroupProject\project1\bin\zh-Hant\EntityFramework.SqlServer.resources.dll
+F:\Georgian\net\COMP2007_GroupProject\project1\obj\Debug\project1.csprojResolveAssemblyReference.cache
+F:\Georgian\net\COMP2007_GroupProject\project1\obj\Debug\project1.dll
+F:\Georgian\net\COMP2007_GroupProject\project1\obj\Debug\project1.pdb
