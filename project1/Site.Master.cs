@@ -47,6 +47,9 @@ namespace project1
                 case "Login":
                     login.Attributes.Add("class", "active");
                     break;
+				case "Logout":
+                    logout.Attributes.Add("class", "active");
+                    break;
 
             }
             return Page.Title;
