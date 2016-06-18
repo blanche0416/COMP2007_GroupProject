@@ -27,7 +27,7 @@
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="SpectatorsTextBox">Spectators</label>
-                    <asp:TextBox runat="server" CssClass="form-control" ID="SpectatorsTextBox" ReadOnly="true" required="true"></asp:TextBox>
+                    <asp:TextBox runat="server" CssClass="form-control" ID="SpectatorsTextBox" required="true"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="DesignatedWinningTeamTextBox">Designated Winning Team</label>

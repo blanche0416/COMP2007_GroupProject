@@ -51,6 +51,8 @@ namespace project1
         {
             Response.Redirect("~/GameTracker.aspx");
         }
+        //update team's informations
+        //update game's total point scored and designated winning team
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             //use EF to connect to the server
@@ -71,13 +73,13 @@ namespace project1
                     Team anotherTeamScore = (from team in db.Teams
                                             where team.GameID == GameID && team.TeamID != TeamID
                                              select team).FirstOrDefault();
-
+                    
                     Game updatedGame = (from game in db.Games
                                         where game.GameID == GameID
                                         select game).FirstOrDefault();
                     if(updatedTeam.TotalPointsScored > anotherTeamScore.TotalPointsScored)
                     {
-                        updatedGame.DesignatedWinningTeam = updatedTeam.TeamName;
+                        updatedGame.DesignatedWinningTeam = TeamNameTextBox.Text;
                     }
                     else if(updatedTeam.TotalPointsScored < anotherTeamScore.TotalPointsScored)
                     {
