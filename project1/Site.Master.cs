@@ -18,8 +18,25 @@ namespace project1
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            //call addActiveClass method
-            addActiveClass();
+            if (!IsPostBack)
+            {
+                // check if a user is logged in
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+
+                    // show the game tracker area
+                    DetailsPlaceHolder.Visible = true;
+                    AdminPlaceHolder.Visible = false;
+                }
+                else
+                {
+                    // only show login and register
+                    DetailsPlaceHolder.Visible = false;
+                    AdminPlaceHolder.Visible = true;
+                    
+                }
+                addActiveClass();
+            }
         }
 
 

@@ -40,11 +40,18 @@
             <div id="bs-example-navbar-collapse-1" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li id="home" runat="server"><a href="/Default.aspx"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li id="register" runat="server"><a href="/Admin/Register.aspx"><i class="fa fa-registered fa-lg"></i> Register</a></li>
-                    <li id="login" runat="server"><a href="/Admin/Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
-                    <li id="contact" runat="server"><a href="/Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
+
+                    <asp:PlaceHolder ID="AdminPlaceHolder" runat="server">
+                        <li id="register" runat="server"><a href="/Admin/Register.aspx"><i class="fa fa-registered fa-lg"></i> Register</a></li>
+                        <li id="login" runat="server"><a href="/Admin/Login.aspx"><i class="fa fa-sign-in fa-lg"></i> Login</a></li>
+                    </asp:PlaceHolder>
+
                     <li id="gametracker" runat="server"><a href="/Details/GameTracker.aspx"><i class="fa fa-gamepad fa-lg"></i> Game Tracker</a></li>
-                    <li id="Logout" runat="server"><a href="/Details/Logout.aspx"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                    <li id="contact" runat="server"><a href="/Contact.aspx"><i class="fa fa-phone fa-lg"></i> Contact Us</a></li>
+
+                    <asp:PlaceHolder ID="DetailsPlaceHolder" runat="server">
+                        <li id="logout" runat="server"><a href="/Details/Logout.aspx"><i class="fa fa-sign-out fa-lg"></i> Logout</a></li>
+                    </asp:PlaceHolder>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -69,7 +76,7 @@
     </footer>
     <!-- End Footer -->
     <!-- script section -->
-    <script src="Scripts/jquery-2.2.3.min.js"></script>
+    <script src="Scripts/jquery-2.2.4.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/app.js"></script>
 </body>

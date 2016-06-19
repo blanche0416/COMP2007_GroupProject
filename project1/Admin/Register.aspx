@@ -8,6 +8,10 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <!-- Here is the header and contact for the page. -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-offset-4 col-md-4"> 
+
      <div class="alert alert-danger" id="AlertFlash" runat="server" visible="false">                 
          <asp:Label runat="server" ID="StatusLabel" />
      </div>
@@ -38,12 +42,14 @@
               <!-- buttons -->  
               <div class="text-right">
                      <asp:Button Text="Cancel" ID="CancelButton" runat="server" CssClass="btn btn-warning" OnClick="CancelButton_Click" UseSubmitBehavior="false" CausesValidation="false" TabIndex="0" />
-                     <asp:Button Text="Register" ID="RegisterButton" runat="server" CssClass="btn btn-primary" OnClick="RegisterButton_Click" TabIndex="0" />
+                     <asp:Button Text="Submit" ID="SubmitButton" runat="server" CssClass="btn btn-primary" OnClick="SubmitButton_Click" TabIndex="0" />
                 </div>
                 <br />
 
             </div>
         </div>
     </div>
+ </div>
+</div>
 
 </asp:Content>
