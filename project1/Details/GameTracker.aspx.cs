@@ -26,11 +26,22 @@ namespace project1
             {
                 //set students from EF db
                 this.GetGames();
+
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    // show everything              
+                }
+                else
+                {
+                    // page before login
+                    GameTrackersGridView.Columns[6].Visible = false;
+
+                }
             }
         }
         protected void GetGames()
         {
-            using (DefaultConnection db = new DefaultConnection())
+            using (ContosoConnection db = new ContosoConnection())
             {
                     var Games = (from allGames in db.Games
                                  select allGames);

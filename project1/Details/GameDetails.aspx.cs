@@ -34,7 +34,7 @@ namespace project1
             int GameID = Convert.ToInt32(Request.QueryString["GameID"]);
 
             //connect to the EF DB
-            using (DefaultConnection db = new DefaultConnection())
+            using (ContosoConnection db = new ContosoConnection())
             {
                 //populate a student object instance with the StudentID from the URL Parameter
                 Game updatedGame = (from game in db.Games
@@ -57,7 +57,7 @@ namespace project1
             //populate teh form with existing data from the database
             int GameID = Convert.ToInt32(Request.QueryString["GameID"]);
 
-            using (DefaultConnection db = new DefaultConnection())
+            using (ContosoConnection db = new ContosoConnection())
             {
                 var Teams = (from team in db.Teams
                              where team.GameID == GameID
@@ -74,7 +74,7 @@ namespace project1
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             //use EF to connect to the server
-            using (DefaultConnection db = new DefaultConnection())
+            using (ContosoConnection db = new ContosoConnection())
             {
                 //populate teh form with existing data from the database
                 int GameID = Convert.ToInt32(Request.QueryString["GameID"]);

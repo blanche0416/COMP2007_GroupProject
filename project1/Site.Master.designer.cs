@@ -31,6 +31,15 @@ namespace project1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
         
         /// <summary>
+        /// AdminPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder AdminPlaceHolder;
+        
+        /// <summary>
         /// register control.
         /// </summary>
         /// <remarks>
@@ -49,15 +58,6 @@ namespace project1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl login;
         
         /// <summary>
-        /// contact control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl contact;
-        
-        /// <summary>
         /// gametracker control.
         /// </summary>
         /// <remarks>
@@ -67,13 +67,31 @@ namespace project1 {
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl gametracker;
         
         /// <summary>
-        /// Logout control.
+        /// contact control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl Logout;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl contact;
+        
+        /// <summary>
+        /// DetailsPlaceHolder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder DetailsPlaceHolder;
+        
+        /// <summary>
+        /// logout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl logout;
         
         /// <summary>
         /// form1 control.

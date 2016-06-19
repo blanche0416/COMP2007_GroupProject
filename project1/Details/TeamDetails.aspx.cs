@@ -31,7 +31,7 @@ namespace project1
             int TeamID = Convert.ToInt32(Request.QueryString["TeamID"]);
 
             //connect to the EF DB
-            using (DefaultConnection db = new DefaultConnection())
+            using (ContosoConnection db = new ContosoConnection())
             {
                 //populate a student object instance with the StudentID from the URL Parameter
                 Team updatedTeam = (from team in db.Teams
@@ -56,7 +56,7 @@ namespace project1
         protected void SaveButton_Click(object sender, EventArgs e)
         {
             //use EF to connect to the server
-            using (DefaultConnection db = new DefaultConnection())
+            using (ContosoConnection db = new ContosoConnection())
             {
                 //populate teh form with existing data from the database
                 int TeamID = Convert.ToInt32(Request.QueryString["TeamID"]);
