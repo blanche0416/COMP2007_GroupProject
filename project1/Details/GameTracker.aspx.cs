@@ -27,16 +27,16 @@ namespace project1
                 //set students from EF db
                 this.GetGames();
 
-                if (HttpContext.Current.User.Identity.IsAuthenticated)
-                {
+                //if (HttpContext.Current.User.Identity.IsAuthenticated)
+                //{
                     // show everything              
-                }
-                else
-                {
+                //}
+                //else
+                //{
                     // page before login
-                    GameTrackersGridView.Columns[6].Visible = false;
+                    //GameTrackersGridView.Columns[6].Visible = false;
 
-                }
+                //}
             }
         }
         protected void GetGames()

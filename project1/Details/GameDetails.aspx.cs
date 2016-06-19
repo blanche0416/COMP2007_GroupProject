@@ -26,6 +26,24 @@ namespace project1
             {
                 this.GetGame();
                 this.GetTeam();
+
+                if (HttpContext.Current.User.Identity.IsAuthenticated)
+                {
+                    // show everything           
+                    BackButton.Visible = false;
+                }
+                else
+                {
+                // page before login
+                    CancelButton.Visible = false;
+                    SaveButton.Visible = false;
+
+                    GameNameTextBox.ReadOnly = true;
+                    ShortDescripTextBox.ReadOnly = true;
+                    SpectatorsTextBox.ReadOnly = true;
+
+                }
+
             }
         }
         protected void GetGame()
@@ -99,6 +117,11 @@ namespace project1
                 //redirect back to the students page
                 Response.Redirect("~/Details/GameTracker.aspx");
             }
+        }
+
+        protected void BackButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Details/GameTracker.aspx");
         }
     }
 }
